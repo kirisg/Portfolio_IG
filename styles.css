@@ -1,45 +1,80 @@
-/*General styles*/
-
+/*general styles*/
 * {
     margin: 0;
     padding: 0;
 }
 
 body{
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
-    align-items: center;
-    justify-content: center;
-    padding: 100px;
-}
-h1{
-    text-align: center;
-    color: #333;
-}
-h2{
-    text-align: center;
-    color: #555;
-}
-p{
-    text-align: center;
-    color: #777;
-}
-
-ul{
-    text-align: center;
-}
-li{
-    display: inline;
-}
-
-img{
-    width: 20%;
-    height: 100px;
-    float: right;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
+h1{
+    
+    color: #333;
+}
+
+h2{
+    
+    color: #555;
+}
+
+p{
+    
+    color: #777;
+}
+
+img{
+    width: 20%;
+    height: 100px;
+}
+
+
+
 /*transition styles*/
+a, .btn{
+    transition: all 300ms ease;
+}
+
+
+/*navigation bar*/
+nav, .navs{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+   height: 17vh;
+}
+
+.navs{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover{
+    color: brown;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: antiquewhite;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
